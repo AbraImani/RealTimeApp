@@ -1,4 +1,4 @@
-# RealTime AI Prototyper avec Gemini & Streamlit
+# RealTimeApp AI Prototyper avec Gemini & Streamlit
 
 Cette application Streamlit permet de prototyper rapidement des fonctionnalités d'IA en utilisant l'API Google Gemini. Elle prend en charge l'importation de documents multi-formats (PDF, DOCX, TXT, JSON), le résumé automatique, le chat contextuel, la génération de quiz, l'analyse de texte et l'exportation des résultats.
 
