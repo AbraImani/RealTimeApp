@@ -16,30 +16,47 @@ Cette application Streamlit permet de prototyper rapidement des fonctionnalités
 RealTime_AI_Prototyper/
 │
 ├── .streamlit/
-│   └── config.toml        # Configuration Streamlit (optionnel)
+│   └── config.toml        
+│       ➤ Fichier de configuration optionnel pour personnaliser certains aspects de l’interface Streamlit.
 │
-├── modules/               # Répertoire pour les modules fonctionnels
-│   ├── __init__.py
-│   ├── config.py          # Gestion des configurations (ex: Clé API)
-│   ├── utils.py           # Fonctions utilitaires (ex: extraction de texte)
-│   ├── loader.py          # Chargement et validation des documents
-│   ├── gemini_client.py   # Interactions avec l'API Gemini
-│   ├── summarizer.py      # Logique de résumé
-│   ├── chatbot.py         # Logique du chatbot contextuel
-│   ├── quiz.py            # Logique de génération et évaluation de quiz
-│   ├── analyzer.py        # Logique d'analyse (mots-clés, nuage, graphiques)
-│   └── exporter.py        # Logique d'export (CSV, PDF, SQLite)
+├── modules/               
+│   ➤ Contient toute la logique métier de l'application, séparée en modules spécifiques :
 │
-├── static/                # Ressources statiques (CSS, images - si besoin)
-│   └── style.css          # CSS personnalisé (optionnel)
+│   ├── config.py          
+│       ➤ Gère les paramètres de configuration, comme les clés API.
+│   ├── utils.py           
+│       ➤ Fonctions utilitaires réutilisables (ex. : nettoyage de texte, formatage).
+│   ├── loader.py          
+│       ➤ Responsable du chargement, de l’analyse et de la validation des fichiers en entrée.
+│   ├── gemini_client.py   
+│       ➤ Gère la communication avec l’API Gemini (par ex. pour des traitements LLM).
+│   ├── summarizer.py      
+│       ➤ Contient la logique de résumé automatique des documents.
+│   ├── chatbot.py         
+│       ➤ Implémente un assistant conversationnel basé sur le contexte.
+│   ├── quiz.py            
+│       ➤ Génère des quiz à partir de contenus et évalue les réponses.
+│   ├── analyzer.py        
+│       ➤ Effectue des analyses (mots-clés, visualisations, etc.).
+│   └── exporter.py        
+│       ➤ Gère l’export des résultats (formats CSV, PDF ou base de données SQLite).
 │
-├── tests/                 # Répertoire pour les tests unitaires
-│   ├── __init__.py
-│   └── test_utils.py      # Exemple de fichier de test
+├── static/                
+│   ➤ Fichiers statiques (feuilles de style, images, etc.) pour personnaliser l’apparence.
 │
-├── app.py                 # Point d'entrée principal de l'application Streamlit
-├── requirements.txt       # Dépendances Python du projet
-└── README.md              # Instructions d'installation et d'utilisation
+├── tests/                 
+│   ➤ Contient les tests unitaires pour garantir la fiabilité des modules.
+│   └── test_utils.py      
+│       ➤ Exemple de test pour les fonctions utilitaires.
+│
+├── app.py                 
+│   ➤ Point d’entrée principal de l'application Streamlit. C’est ce fichier qu’on exécute pour lancer l’interface.
+│
+├── requirements.txt       
+│   ➤ Liste des dépendances Python nécessaires à l’installation du projet.
+│
+└── README.md              
+    ➤ Ce fichier de documentation, fournissant les instructions d’installation, d’exécution et d’utilisation.
 
 ## Installation
 
