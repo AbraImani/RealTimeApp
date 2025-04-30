@@ -19,7 +19,7 @@ RealTime_AI_Prototyper/
 │   └── config.toml        # Configuration Streamlit (optionnel)
 │
 ├── modules/               # Répertoire pour les modules fonctionnels
-│   ├── init.py
+│   ├── __init__.py
 │   ├── config.py          # Gestion des configurations (ex: Clé API)
 │   ├── utils.py           # Fonctions utilitaires (ex: extraction de texte)
 │   ├── loader.py          # Chargement et validation des documents
@@ -33,14 +33,13 @@ RealTime_AI_Prototyper/
 ├── static/                # Ressources statiques (CSS, images - si besoin)
 │   └── style.css          # CSS personnalisé (optionnel)
 │
-├── tests/                 # Répertoire pour les tests unitaires (structure de base)
-│   ├── init.py
+├── tests/                 # Répertoire pour les tests unitaires
+│   ├── __init__.py
 │   └── test_utils.py      # Exemple de fichier de test
 │
 ├── app.py                 # Point d'entrée principal de l'application Streamlit
-├── requirements.txt       # Dépendances Python du projet (version initiale)
+├── requirements.txt       # Dépendances Python du projet
 └── README.md              # Instructions d'installation et d'utilisation
-
 
 ## Installation
 
